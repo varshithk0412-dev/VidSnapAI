@@ -7,6 +7,7 @@ UPLOAD_FOLDER = 'user_uploads'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 app = Flask(__name__)
+app.secret_key = "wrp923rpfweownewioehrh3wr"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def allowed(filename):
